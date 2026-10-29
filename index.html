@@ -1,0 +1,46 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Wrap Portfolio</title>
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f5f7;font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+form{background:#fff;padding:32px 28px;border-radius:14px;box-shadow:0 4px 24px rgba(0,0,0,.08);width:min(320px,86vw)}
+h1{font-size:18px;margin:0 0 18px;color:#333}
+input[type=password]{width:100%;box-sizing:border-box;padding:12px;font-size:16px;border:1px solid #ccd;border-radius:8px}
+button{width:100%;margin-top:12px;padding:12px;font-size:16px;border:0;border-radius:8px;background:#3c3c3c;color:#fff}
+label{display:block;margin-top:10px;font-size:13px;color:#666}
+#msg{margin-top:10px;font-size:13px;color:#c33;min-height:1em}
+</style></head><body>
+<form id="f"><h1>Wrap Portfolio</h1>
+<input id="pw" type="password" placeholder="비밀번호" autocomplete="current-password" autofocus>
+<label><input id="rem" type="checkbox"> 이 기기에서 기억</label>
+<button>열기</button><div id="msg"></div></form>
+<script>
+const P="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";
+const b64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+const raw=b64(P),salt=raw.slice(0,16),iv=raw.slice(16,28),ct=raw.slice(28);
+const SALT=btoa(String.fromCharCode(...salt));
+// 비밀번호 자체는 어디에도 저장하지 않는다. '기억'은 이 기기에 복호화 키만 남기고,
+// 비밀번호를 바꾸면(서버측 재암호화) 그 키는 자동으로 무효가 된다.
+const store={get(){try{const v=sessionStorage.getItem("wrapkey")||localStorage.getItem("wrapkey");return v?JSON.parse(v):null}catch(e){return null}},
+  put(k,remember){try{const v=JSON.stringify({s:SALT,k});sessionStorage.setItem("wrapkey",v);if(remember)localStorage.setItem("wrapkey",v)}catch(e){}},
+  clear(){try{["wrapkey","wrappw"].forEach(n=>{sessionStorage.removeItem(n);localStorage.removeItem(n)})}catch(e){}}};
+try{localStorage.removeItem("wrappw");sessionStorage.removeItem("wrappw")}catch(e){}
+async function show(key){
+  const plain=await crypto.subtle.decrypt({name:"AES-GCM",iv},key,ct);
+  const html=await new Response(new Blob([plain]).stream().pipeThrough(new DecompressionStream("gzip"))).text();
+  document.open();document.write(html);document.close();
+}
+async function go(pw,remember){
+  const m=document.getElementById("msg");m.textContent="확인 중…";
+  try{
+    const k0=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]);
+    const key=await crypto.subtle.deriveKey({name:"PBKDF2",salt,iterations:600000,hash:"SHA-256"},k0,{name:"AES-GCM",length:256},true,["decrypt"]);
+    const kraw=new Uint8Array(await crypto.subtle.exportKey("raw",key));
+    await show(key);
+    store.put(btoa(String.fromCharCode(...kraw)),remember);
+  }catch(e){ store.clear(); m.textContent="비밀번호가 맞지 않습니다"; }
+}
+document.getElementById("f").addEventListener("submit",e=>{e.preventDefault();go(pw.value,rem.checked)});
+(async()=>{const sv=store.get(); if(!sv||sv.s!==SALT){ if(sv) store.clear(); return; }
+  try{ await show(await crypto.subtle.importKey("raw",b64(sv.k),"AES-GCM",false,["decrypt"])); }catch(e){ store.clear(); }})();
+</script></body></html>
